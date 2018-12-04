@@ -1,5 +1,6 @@
 package day3
 
+import substringBetween
 import java.io.File
 
 val input = File("src/day3/input").readLines()
@@ -76,7 +77,5 @@ private fun Array<Array<Int>>.print() {
         println()
     }
 }
-
-private fun String.substringBetween(after: String, before: String) = substringBefore(before).substringAfter(after)
 
 data class Claim(val id: Int, val x: Int, val y: Int, val w: Int, val h: Int)
